@@ -9,6 +9,7 @@
         tools:context=".ListDrinks">
 
     <Button
+        android:id="@+id/btnSair"
         android:layout_width="95dp"
         android:layout_height="wrap_content"
         android:background="@color/cor1"
@@ -17,17 +18,18 @@
         android:paddingLeft="40dp"/>
 
     <EditText
+        android:id="@+id/edtBusca"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/rounded_border"
         android:layout_margin="16dp"
         android:padding="15dp"
-        android:drawableRight="@drawable/ic_search"
+        android:drawableLeft="@drawable/ic_search"
         android:drawableTint="@color/cor3"
-        android:text="  Buscar"
         android:textColor="@color/cor3"/>
 
     <Spinner
+        android:id="@+id/sp_classificar"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_gravity="right"
