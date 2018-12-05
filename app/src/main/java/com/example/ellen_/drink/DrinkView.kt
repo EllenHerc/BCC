@@ -6,6 +6,10 @@ import android.os.Bundle
 
 class DrinkView : AppCompatActivity() {
 
+    companion object {
+        public const val DRINK: String = "Drink" //para putExtra entre activities
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         supportActionBar?.hide()

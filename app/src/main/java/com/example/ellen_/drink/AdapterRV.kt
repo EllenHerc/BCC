@@ -14,19 +14,8 @@ class AdapterRV (val context: Context, val drinks: List<Drink>)
     var clickListener: ((index: Int) -> Unit)? = null
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.activity_list_drinks, parent, false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_list, parent, false)
         return ViewHolder(view)
-    }
-
-    fun getView(position: Int,convertView: View?,parent: ViewGroup?): View{
-        val view = LayoutInflater.from(context).inflate(R.layout.activity_list_drinks, parent, false)
-        val drinkID = view.findViewById(R.id.drinkId) as TextView
-        val drinkNAME = view.findViewById(R.id.drinkName) as TextView
-
-        drinkID.text = drinks[position].idDrink.toString()
-        drinkNAME.text = drinks[position].strDrink
-
-        return view
     }
 
     override fun getItemCount(): Int {
