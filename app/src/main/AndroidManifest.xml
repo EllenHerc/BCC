@@ -21,7 +21,7 @@
         </activity>
         <activity android:name=".list.ListDrinks">
         </activity>
-        <activity android:name=".list.DrinkView">
+        <activity android:name=".list.DrinkViewFragment">
         </activity>
     </application>
 

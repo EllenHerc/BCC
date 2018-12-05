@@ -1,4 +1,6 @@
 package com.example.ellen_.drink.entities
+import java.io.Serializable
+
 
 data class Drink (
     val idDrink : String,
@@ -7,6 +9,4 @@ data class Drink (
     val strIBA: String? = null,
     val strGlass: String? = null,
     val strInstructions : String? = null,
-    val strDrinkThumb : String){
-
-}
+    val strDrinkThumb : String): Serializable
