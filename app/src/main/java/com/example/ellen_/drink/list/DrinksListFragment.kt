@@ -45,11 +45,11 @@ class DrinksListFragment : Fragment() {
                 listener?.onFragmentInteraction(drinks[position])
             }
 
+
             rvDrinks.adapter = adapter
             rvDrinks.layoutManager = LinearLayoutManager(that)
 
         }
-
     }
 
     override fun onAttach(context: Context?) {
@@ -68,6 +68,7 @@ class DrinksListFragment : Fragment() {
 
     fun getDrinksList(): ArrayList<Drink>{
         val drinks = arguments?.getSerializable(ARG_LIST) as ArrayList<Drink>?
+
         if(drinks == null){
             throw NullPointerException("Drinks list can not be null")
         }

@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Drink</string>
+    <string-array name="classificar">
+        <item id="1">Name</item>
+        <item id="2">Random</item>
+    </string-array>
+    <string name="classificar">Classificar</string>
 </resources>

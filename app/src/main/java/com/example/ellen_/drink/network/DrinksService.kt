@@ -1,5 +1,6 @@
 package com.example.ellen_.drink.network
 
+import com.example.ellen_.drink.entities.Drink
 import com.example.ellen_.drink.entities.DrinkList
 import retrofit2.Call
 import retrofit2.http.GET
@@ -15,6 +16,6 @@ interface DrinksService {
     fun getFilter(@Query("a") filter: String = "Alcoholic"): Call<DrinkList>
 
     @GET("lookup.php?")
-    fun getId(@Query("i") id: String): Call<DrinkList>
+    fun getId(@Query("i") id: String): Call<Drink>
 
 }

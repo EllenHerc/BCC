@@ -3,7 +3,7 @@
           package="com.example.ellen_.drink">
 
     <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 
     <application
             android:allowBackup="true"
@@ -22,6 +22,8 @@
         <activity android:name=".list.ListDrinks">
         </activity>
         <activity android:name=".list.DrinkViewFragment">
+        </activity>
+        <activity android:name=".list.DrinkView">
         </activity>
     </application>
 

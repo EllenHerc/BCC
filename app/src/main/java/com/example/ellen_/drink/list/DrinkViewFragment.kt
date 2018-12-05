@@ -7,10 +7,12 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.LinearLayout
+import android.widget.Toast
 import com.bumptech.glide.Glide
 import com.example.ellen_.drink.R
 import com.example.ellen_.drink.entities.Drink
 import kotlinx.android.synthetic.main.fragment_drink_view.*
+import kotlinx.android.synthetic.main.item_list.*
 
 
 class DrinkViewFragment : Fragment() {
@@ -37,24 +39,23 @@ class DrinkViewFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
         val drink = getDrink()
 
-        val linearLayout = view.findViewById<LinearLayout>(R.id.linearLayout)
-        val imageView = ImageView(view.context)
-        linearLayout.addView(imageView)
-        Glide.with(this)
-            .asGif()
-            .load(drink.strDrinkThumb)
-            .into(imageView)
+        activity?.let{ that ->
+            val linearLayout = that.findViewById<LinearLayout>(R.id.linearLayout)
+            val imageView = ImageView(that)
+            Glide.with(this).load(drink.strDrinkThumb).into(imageView)
+            linearLayout.addView(imageView)
 
-        textName.text = drink.strDrink
-        textCategory.text = drink.strCategory
-        textGlass.text = drink.strGlass
-        textIba.text = drink.strIBA
-        textInstructions.text = drink.strInstructions
+            textName.text = drink.strDrink
+            textCategory.text = drink.strCategory
+            textGlass.text = drink.strGlass
+            textIba.text = drink.strIBA
+            textInstructions.text = drink.strInstructions
 
+        }
     }
+
     fun getDrink(): Drink{
         val drink = arguments?.getSerializable(ARG_ARTICLE) as Drink?
         if(drink == null){
@@ -63,6 +64,10 @@ class DrinkViewFragment : Fragment() {
 
         return drink
     }
+
+
+
+
 
 
 }
