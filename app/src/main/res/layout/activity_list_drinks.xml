@@ -6,7 +6,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:background="@color/cor1"
-        tools:context=".ListDrinks">
+        tools:context=".list.ListDrinks">
 
     <Button
         android:id="@+id/btnSair"

@@ -12,16 +12,16 @@
             android:roundIcon="@mipmap/ic_drink_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".Splash">
+        <activity android:name=".list.Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".ListDrinks">
+        <activity android:name=".list.ListDrinks">
         </activity>
-        <activity android:name=".DrinkView">
+        <activity android:name=".list.DrinkView">
         </activity>
     </application>
 

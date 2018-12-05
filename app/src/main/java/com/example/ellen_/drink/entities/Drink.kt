@@ -1,4 +1,4 @@
-package com.example.ellen_.drink
+package com.example.ellen_.drink.entities
 
 data class Drink (
     val idDrink : String,

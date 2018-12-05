@@ -1,11 +1,12 @@
-package com.example.ellen_.drink
+package com.example.ellen_.drink.list
 
-import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
 import android.widget.ProgressBar
 import android.widget.Toast
+import com.example.ellen_.drink.R
+import com.example.ellen_.drink.entities.Drink
 import kotlinx.android.synthetic.main.activity_list_drinks.*
 
 
@@ -16,7 +17,8 @@ class ListDrinks : AppCompatActivity(), ListDrinksContract.View {
         supportActionBar?.hide()
         setContentView(R.layout.activity_list_drinks)
 
-        val presenter : ListDrinksContract.Presenter = ListDrinksPresenter(this)
+        val presenter : ListDrinksContract.Presenter =
+            ListDrinksPresenter(this)
         presenter.onLoadList()
     }
 

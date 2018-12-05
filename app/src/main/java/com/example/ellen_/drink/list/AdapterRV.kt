@@ -1,11 +1,12 @@
-package com.example.ellen_.drink
+package com.example.ellen_.drink.list
 
 import  android.content.Context
 import  android.support.v7.widget.RecyclerView
 import  android.view.LayoutInflater
 import android.view.View
 import  android.view.ViewGroup
-import android.widget.TextView
+import com.example.ellen_.drink.R
+import com.example.ellen_.drink.entities.Drink
 import kotlinx.android.synthetic.main.item_list.view.*
 
 class AdapterRV (val context: Context, val drinks: List<Drink>)

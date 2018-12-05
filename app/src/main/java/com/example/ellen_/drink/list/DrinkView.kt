@@ -1,7 +1,8 @@
-package com.example.ellen_.drink
+package com.example.ellen_.drink.list
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import com.example.ellen_.drink.R
 
 
 class DrinkView : AppCompatActivity() {

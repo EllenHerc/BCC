@@ -1,4 +1,6 @@
-package com.example.ellen_.drink
+package com.example.ellen_.drink.list
+
+import com.example.ellen_.drink.entities.Drink
 
 interface ListDrinksContract {
 

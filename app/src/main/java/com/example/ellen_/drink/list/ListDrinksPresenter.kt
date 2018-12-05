@@ -1,5 +1,8 @@
-package com.example.ellen_.drink
+package com.example.ellen_.drink.list
 
+import com.example.ellen_.drink.entities.DrinkList
+import com.example.ellen_.drink.list.ListDrinksContract
+import com.example.ellen_.drink.network.RetrofitInicializer
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
