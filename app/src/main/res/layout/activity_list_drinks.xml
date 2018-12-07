@@ -8,36 +8,13 @@
         android:background="@color/cor1"
         tools:context=".list.ListDrinks">
 
-    <Button
-        android:id="@+id/btnSair"
-        android:layout_width="95dp"
-        android:layout_height="wrap_content"
-        android:background="@color/cor1"
-        android:drawableTint="@color/cor3"
-        android:drawableLeft="@drawable/ic_back"
-        android:paddingLeft="40dp"/>
-
-    <EditText
-        android:id="@+id/edtBusca"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/rounded_border"
-        android:layout_margin="16dp"
-        android:cursorVisible="false"
-        android:padding="15dp"
-        android:drawableLeft="@drawable/ic_search"
-        android:drawableTint="@color/cor3"
-        android:textColor="@color/cor3"/>
-
     <Spinner
         android:id="@+id/sp_classificar"
-        android:entries="@array/classificar"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_gravity="right"
-        android:layout_marginBottom="16dp"
-        android:layout_marginRight="16dp"
-        android:prompt="@string/classificar"/>
+        android:layout_margin="16dp"
+         />
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"

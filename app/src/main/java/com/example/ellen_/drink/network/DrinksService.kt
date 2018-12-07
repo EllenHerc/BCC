@@ -16,6 +16,6 @@ interface DrinksService {
     fun getFilter(@Query("a") filter: String = "Alcoholic"): Call<DrinkList>
 
     @GET("lookup.php?")
-    fun getId(@Query("i") id: String): Call<Drink>
+    fun getId(@Query("i") id: String): Call<DrinkList>
 
 }
